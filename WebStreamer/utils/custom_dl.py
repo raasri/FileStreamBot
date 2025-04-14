@@ -74,7 +74,7 @@ class TGCustomYield:
                 await media_session.start()
 
                 for _ in range(3):
-                    exported_auth = await client.send(
+                    exported_auth = await client.invoke(
                         raw.functions.auth.ExportAuthorization(
                             dc_id=data.dc_id
                         )
